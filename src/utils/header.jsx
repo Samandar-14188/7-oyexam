@@ -9,9 +9,9 @@ export default function Header() {
       <ul>
         <li>
           <NavLink to="/" >HOME</NavLink>
-          <NavLink to="/speakers" >HEADPHONES</NavLink>
-          <NavLink to="/earphones" >SPEAKERS</NavLink>
-          <NavLink to="/headphones" >EARPHONES</NavLink>
+          <NavLink to="/headphones" >HEADPHONES</NavLink>
+          <NavLink to="/speakers" >SPEAKERS</NavLink>
+          <NavLink to="/earphones" >EARPHONES</NavLink>
       
         </li>
       </ul>

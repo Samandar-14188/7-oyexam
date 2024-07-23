@@ -1,13 +1,13 @@
-
-import './App.css'
+import { Route, Router, BrowserRouter } from "react-router";
+import "./App.css";
 
 function App() {
-
-  return (
-    <>
- <p>Salom</p>
-    </>
-  )
+  return 
+ <div>
+   <BrowserRouter >
+   
+   </BrowserRouter>
+ </div>
 }
 
-export default App
+export default App;

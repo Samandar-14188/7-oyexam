@@ -1,0 +1,866 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    max-width: 100vw;
+    height: 50px;
+    background: #0e0e0e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 0.5px solid gray;
+    padding: 20px 40px;
+  }
+  ul {
+    list-style: none;
+  }
+  ul li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  a {
+    font-family: Manrope;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .shoppingIcon {
+    width: 23.33px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .shoppingIcon:hover {
+    transform: translate(1.1px);
+  }
+  .Home-container {
+    max-width: 1440px;
+    background: #fff;
+  }
+  
+  .hero-container,
+  .hero-container-headphones,
+  .hero-container-earphones,
+  .hero-container-speakers {
+    max-width: 100vw;
+    background: #0e0e0e;
+    height: 729px;
+    padding: 20px 50px;
+  }
+  footer {
+    background: #101010;
+    max-width: 100vw;
+    height: 300px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-info {
+    flex-direction: column;
+    color: #fff;
+    opacity: 0.5;
+    width: 50%;
+    display: flex;
+    gap: 50px;
+  }
+  .footer-link {
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+  .footerIcons {
+    width: 25px;
+    height: 25px;
+  }
+  .hero-container-headphones,
+  .hero-container-earphones,
+  .hero-container-speakers {
+    height: 336px;
+  }
+  .hero-container-headphones h1,
+  .hero-container-speakers h1,
+  .hero-container-earphones h1 {
+    font-size: 40px;
+    font-family: Manrope;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  .hero-picture {
+    width: 50%;
+  }
+  .Home-picture img {
+    max-width: 708px;
+    max-height: 650px;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .heroInfo {
+    max-width: 50%;
+    height: 346px;
+  }
+  .heroInfo span,
+  .heroInfo p {
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.3;
+    max-width: 379px;
+  }
+  .heroInfo h1,
+  .ZX9SPEAKER-container h1 {
+    padding-top: 20px;
+    color: #fff;
+    font-size: 56px;
+    font-weight: 700;
+  }
+  .heroInfo p {
+    padding: 20px 0px 40px 0px;
+  }
+  button {
+    background: #d87d4a;
+    width: 140px;
+    padding: 20px;
+    height: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .LinkHome-container {
+    width: 100%;
+    height: 384px;
+    background: #fff;
+    margin: 50px 0px;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cards-container {
+    max-width: 350px;
+    max-height: 284px;
+    position: relative;
+  }
+  .cards-container img {
+    position: absolute;
+    width: 122px;
+    height: 130px;
+    top: -60px;
+    left: 80px;
+  }
+  .card {
+    background: #e5e5e5;
+    width: 300px;
+    height: 204px;
+    border-radius: 15px;
+    display: inline-block;
+  }
+  .cards-container h2 {
+    margin: 100px;
+    margin-left: 75px;
+  }
+  .cards-container span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #787878;
+    position: absolute;
+    top: 150px;
+    left: 120px;
+  }
+  .iconCard {
+    color: #d87d4a;
+  }
+  .ZX9SPEAKER-container,
+  .ZX7SPEAKERTwo-container,
+  .YX1EARPHONES-container,
+  .HomeInformation-container {
+    width: 100vw;
+    height: 560px;
+    padding: 0px 100px;
+    background: white;
+  }
+  .ZX9SPEAKER-container p {
+    color: #fff;
+  }
+  .ZX9SPEAKER-container button {
+    background: #000;
+  }
+  .ZX9SPEAKERInfo {
+    width: 50%;
+    height: 303px;
+    display: flex;
+    padding-right: 350px;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .ZX7SPEAKERTwo-container {
+    width: 100vw;
+    height: 320px;
+    background: #fff;
+    margin: 100px 0px;
+  }
+  .ZX9SPEAKER-Main {
+    background: #d87d4a;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-radius: 5px;
+  }
+  .ZX9SPEAKERtwo-Main {
+    width: 100%;
+    border-radius: 5px;
+    gap: 30px;
+    background: #000;
+    background-image: url("../public/ThreePicture.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+  }
+  .ZX9SPEAKERTwoInfo h1 {
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 2px;
+  }
+  .ZX9SPEAKERTwoInfo {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .ZX9SPEAKERTwoInfo button {
+    background: #cfcfcf;
+    color: #000;
+    border: 1.5px solid black;
+    font-weight: 700;
+  }
+  .YX1EARPHONES-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .YX1EARPHONES-container .ZX9SPEAKERTwoInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 70px;
+  }
+  .HomeInformation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .HomeInformation-container h1 {
+    font-family: Manrope;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 1.4285714626312256px;
+    text-align: left;
+  }
+  .HomeInformation-container h1 span {
+    color: #d87d4a;
+  }
+  .Information-container {
+    width: 445px;
+    height: 295px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .Information-container p {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #737373;
+  }
+  .HomeInformation-container img {
+    width: 540px;
+    height: 588px;
+  }
+  .PictureCard-container {
+    width: 540px;
+    height: 560px;
+    background: #f1f1f1;
+  }
+  .Headphones-wrapper,
+  .speakers-wrapper,
+  .earphones-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+  }
+  .InformationCard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 445px;
+    padding-right: 60px;
+  }
+  .InformationCard-container h1 {
+    font-family: Manrope;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 1.4285714626312256px;
+    text-align: left;
+  }
+  .InformationCard-container p {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #737373;
+  }
+  .PictureCard-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .InformationCard-container span {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 10px;
+    text-align: left;
+    color: #d87d4a;
+  }
+  .PictureCard-container img {
+    width: 295.84px;
+    height: 385px;
+  }
+  .Back {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #acacac;
+  }
+  .product-container header {
+    width: 100vw;
+    height: 97px;
+    padding: 20px 50px;
+  }
+  .mainProducts-container {
+    padding: 50px 100px 0px;
+  }
+  .mainProducts-container .LinkHome-container {
+    padding: 0px;
+    width: 98%;
+  }
+  .mainProducts-container .HomeInformation-container {
+    padding: 0px;
+    width: 100%;
+    padding-right: 20px;
+  }
+  .ProductCards {
+    width: 350px;
+    height: 471px;
+    text-align: center;
+  }
+  .imageCard {
+    width: 350px;
+    height: 318px;
+    background: #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .imageCard img {
+    width: 132.97px;
+    height: 191px;
+  }
+  .ProductCards h3 {
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 1.7142857313156128px;
+    text-align: center;
+    margin: 30px auto;
+  }
+  .Products-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .CardsProducts h1 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.1428571939468384px;
+    text-align: left;
+    margin: 40px auto;
+    text-transform: uppercase;
+    margin-left: 35%;
+  }
+  .ProductInfo-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .PictureCard-container p {
+    color: #000;
+  }
+  .FEATURES {
+    width: 55%;
+    height: 318px;
+  }
+  .FEATURES p,
+  .ProductInfo-container li {
+    color: #787878;
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .FEATURES h1 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.1428571939468384px;
+    text-align: left;
+    margin: 30px 0px;
+  }
+  .table {
+    width: 45%;
+    padding: 0px 150px;
+  }
+  .table h1 {
+    text-transform: uppercase;
+    margin: 30px 0px;
+  }
+  .ProductInfo-container ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .ProductInfo-container span {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #d87d4a;
+  }
+  .CardsProduct-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .CardsProduct-oneWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 45%;
+    height: 592px;
+  }
+  .CardsProduct-twoWrapper {
+    width: 55%;
+  }
+  .Bg-CardsTwo img {
+    width: 635px;
+    height: 592px;
+    border-radius: 5px;
+  }
+  .Bg-Cards img {
+    width: 445px;
+    height: 280px;
+    border-radius: 5px;
+  }
+  .ProductsMain-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px 0px;
+  }
+  .btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .btnCoun {
+    background: #d3d0d0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icons {
+    color: #a8a6a6;
+    cursor: pointer;
+  }
+  .btnCoun span {
+    color: #000;
+    font-size: 16px;
+  }
+  header li a:hover {
+    color: #d87d4a;
+    transform: translate(1.1px);
+  }
+  .Dialog-main {
+    width: 377px;
+    height: 488px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .Dialog-wrapper {
+    width: 100%;
+    padding-right: 100px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .Dialog-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .dialog-card,
+  .cardModal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .dialog-card button {
+    width: 96px;
+    height: 32px;
+  }
+  .Dialog-main span {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1.2857142686843872px;
+    text-align: left;
+  }
+  .Dialog-main p {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    cursor: pointer;
+  }
+  .Remove:hover {
+    color: #d87d4a;
+  }
+  .Dialog-info h6,
+  .cardModal-info h6 {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .Dialog-info p {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #acacac;
+  }
+  .Dialog-main .PictureCard-container {
+    width: 64px;
+    height: 64px;
+  }
+  .Dialog-main .PictureCard-container img,
+  .cardModal img {
+    width: 37px;
+    height: 40px;
+  }
+  .dialogCard-img {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .price-dialog {
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .total {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    opacity: 0.5;
+  }
+  .Dialog-main button {
+    width: 100%;
+    border-radius: 0px;
+  }
+  
+  button:hover {
+    transform: translate(1.1px);
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .checkout-container {
+    width: 730px;
+  }
+  .Checkout {
+    width: 600px;
+    height: 1126px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .checkout-dialog {
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+  }
+  .text-input {
+    width: 309px;
+    height: 56px;
+    border: 1px solid #cfcfcf;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    color: #bebcbc;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+  }
+  .Input-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .Input-wrapper .input-container {
+    width: 50%;
+  }
+  .Input-wrapper label {
+    margin-top: 20px;
+  }
+  .Input-addres {
+    width: 100%;
+  }
+  input::placeholder {
+    color: #cfcfcf;
+  }
+  .InputRadio-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .RadioInput {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+  }
+  .Checkout h1 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.1428571939468384px;
+    text-align: left;
+  }
+  .Radio-container {
+    width: 50%;
+    padding-right: 20px;
+  }
+  .Checkout p {
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.9285714030265808px;
+    text-align: left;
+    color: #d87d4a;
+    margin: 30px 0px;
+    text-transform: uppercase;
+  }
+  .RadioInput-wrapper {
+    height: 56px;
+    border: 1px solid #cfcfcf;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    color: #bebcbc;
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .Checkout-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+  .Checkout-info img {
+    width: 48px;
+    height: 48px;
+  }
+  .Checkout-info p {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #787878;
+    width: 88%;
+  }
+  .Modal-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .Modal-button {
+    width: 100%;
+  }
+  .Modal-dialog {
+    width: 540px;
+    height: 713px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .Modal-dialog h1 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.1428571939468384px;
+    text-align: left;
+  }
+  .Modal-dialog p {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #bebcbc;
+    margin: 30px 0px;
+  }
+  .Modal-dialog button {
+    width: 100%;
+  }
+  .cardModal span {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #787878;
+  }
+  .Product-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .modal-wrapper {
+    width: 50%;
+    background: #a8a6a6;
+    width: 444px;
+    height: 270px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .modal-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .black {
+    background: #000;
+    color: white;
+    padding-top: 80px;
+  }
+  .cardModal {
+    width: 198px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  .cardModal-info {
+    gap: 5px;
+  }
+  .cardModal-info p {
+    padding: 0;
+    margin: 0;
+  }

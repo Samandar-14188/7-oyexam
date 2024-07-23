@@ -1,7 +1,10 @@
-import React from 'react'
+import CartShop from "../../utils/productCart";
 
 export default function Headphones() {
   return (
-    <div>Headphones</div>
-  )
+    <div>
+      Headphones
+      <CartShop />
+    </div>
+  );
 }

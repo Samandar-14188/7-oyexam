@@ -5,7 +5,7 @@ import Speakers from "./page/speakers";
 import Earphones from "./page/earphones";
 import Headphones from "./page/headphones";
 import Footer from "./utils/footer";
-
+import AudiophilePage from "./utils/audiophile";
 export default function App() {
   return (
     <div>
@@ -17,6 +17,7 @@ export default function App() {
           <Route path="earphones" element={<Earphones />} />
           <Route path="headphones" element={<Headphones />} />
         </Routes>
+        <AudiophilePage />
         <Footer />
       </BrowserRouter>
     </div>

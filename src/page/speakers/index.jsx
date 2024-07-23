@@ -1,7 +1,10 @@
-import React from 'react'
+import CartShop from "../../utils/productCart";
 
 export default function Speakers() {
   return (
-    <div>speakers</div>
-  )
+    <div>
+      speakers
+      <CartShop />
+    </div>
+  );
 }

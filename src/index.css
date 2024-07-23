@@ -152,12 +152,11 @@
     color: white;
     cursor: pointer;
   }
-  .LinkHome-container {
+  .CartShop-container {
     width: 100%;
     height: 384px;
     background: #fff;
-    margin: 50px 0px;
-    padding: 100px;
+    padding:40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -193,6 +192,7 @@
     position: absolute;
     top: 150px;
     left: 120px;
+    cursor: pointer;
   }
   .iconCard {
     color: #d87d4a;
@@ -203,7 +203,7 @@
   .HomeInformation-container {
     width: 100vw;
     height: 560px;
-    padding: 0px 100px;
+    padding: 0px 50px;
     background: white;
   }
   .ZX9SPEAKER-container p {

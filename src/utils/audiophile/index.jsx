@@ -1,11 +1,11 @@
-import ImageAudiophile from "../../assets/Bitmap.png";
 import Audiophile from "./audiophileIMG";
 import Information from "./information";
-export default function HomeInformation() {
+import AudiophilePNG from "../../assets/AudiophilePNG.png"
+export default function AudiophilePage() {
   return (
     <div className="HomeInformation-container">
       <Information />
-      <Audiophile img={ImageAudiophile} />
+      <Audiophile img={AudiophilePNG} />
     </div>
   );
 }

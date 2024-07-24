@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import ProductCart from '../../utils/productCart/index'
 const Headphones = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -35,12 +35,8 @@ const Headphones = () => {
 
   return (
     <div>
-      <h1>Cart Shop</h1>
-      <ul>
-        {data.map((item) => (
-          <li key={item.id}>{item.id}</li>
-        ))}
-      </ul>
+      
+      <ProductCart />
     </div>
   );
 };

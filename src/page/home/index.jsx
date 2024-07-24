@@ -4,37 +4,43 @@ import Onebaground from "../../assets/onebaground.png";
 import Twobaground from "../../assets/twobaground.png";
 import Threebaground from "../../assets/fivebaground.png";
 import ProductCart from "../../utils/productCart/index";
+import CircularIndeterminate from "../../components/loader";
+
 const CartShop = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // APIga so'rov yuborish
-    fetch("http://localhost:3000/3")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        // Ma'lumotni array qilib olish
-        setData(Array.isArray(data) ? data : [data]);
-        setLoading(false); // Yuklash jarayonini to'xtatish
-      })
-      .catch((error) => {
-        setError(error); // Xatoni saqlash
-        setLoading(false); // Yuklash jarayonini to'xtatish
-      });
+    setTimeout(() => {
+      // APIga so'rov yuborish
+      fetch("http://localhost:3000/3")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          // Ma'lumotni array qilib olish
+          setData(Array.isArray(data) ? data : [data]);
+          setLoading(false); // Yuklash jarayonini to'xtatish
+        })
+        .catch((error) => {
+          setError(error); // Xatoni saqlash
+          setLoading(false); // Yuklash jarayonini to'xtatish
+        });
+    }, 600); // 2 soniya kutish
   }, []); // Bo'sh array, shuning uchun faqat bir marta render qilinganda ishlaydi
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="loader-container">
+      <CircularIndeterminate />
+    </div>;
   }
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <div className="loader-container">Error: {error.message}</div>;
   }
 
   return (

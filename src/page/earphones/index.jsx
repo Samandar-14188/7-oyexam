@@ -1,4 +1,8 @@
+import fiveProduct from '../../assets/fivebaground.png';
 import React, { useState, useEffect } from 'react';
+import ProductCart from "../../utils/productCart/index";
+import InfoCard from '../../utils/Product/info'; // To'g'ri komponent importi
+import PictureCard from '../../utils/Product/image'; // To'g'ri komponent importi
 
 const Earphones = () => {
   const [data, setData] = useState([]);
@@ -33,14 +37,17 @@ const Earphones = () => {
     return <div>Error: {error.message}</div>;
   }
 
+  const product = data[0] || {}; // `product1` o'rniga `product` ishlatiladi
+
   return (
     <div>
-      <h1>Cart Shop</h1>
-      <ul>
-        {data.map((item) => (
-          <li key={item.id}>{item.id}</li>
-        ))}
-      </ul>
+      <div className='hero-title'>EARPHONES</div>
+      <div className='speakers-wrapper earphones-wrapper'>
+      <PictureCard img={fiveProduct} />
+        <InfoCard title={product.name} paragraf={product.description} />
+     
+      </div>
+      <ProductCart />
     </div>
   );
 };

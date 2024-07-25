@@ -1,15 +1,6 @@
-// Input.tsx
 import React from "react";
 
-
-const Input= ({
-  type,
-  label,
-  className,
-  placeholder,
-  value,
-  onChange,
-}) => {
+const Input = ({ type, label, className, placeholder, value, onChange }) => {
   return (
     <div className="input-container">
       <label>{label}</label>

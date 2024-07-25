@@ -1,21 +1,19 @@
+import React from "react";
 
-  const RadioInput= ({ options, onChange }) => {
-    return (
-      <div className="Radio-container">
-        {options.map((option, index) => (
-          <div key={index} className="RadioInput-wrapper">
-            <input
-              type="radio"
-              id={option.id}
-              name={option.name}
-              value={option.value}
-              onChange={() => onChange(option.value)}
-            />
-            <label htmlFor={option.id}>{option.label}</label>
-          </div>
-        ))}
+const RadioInput = ({ label, checked, onChange }) => {
+  return (
+    <div className="radio-container">
+      <div className="RadioInput-wrapper">
+        <input
+          type="radio"
+          id={label}
+          checked={checked}
+          onChange={onChange}
+        />
+        <label htmlFor={label}>{label}</label>
       </div>
-    );
-  };
-  
-  export default RadioInput;
+    </div>
+  );
+};
+
+export default RadioInput;

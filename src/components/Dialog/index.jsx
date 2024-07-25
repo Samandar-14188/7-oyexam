@@ -6,7 +6,7 @@ import Dialog from "@mui/material/Dialog";
 import ButtonCounter from "../ButtonCounter";
 import { selectCartItems, removeAll } from "../../redux/cartSlice";
 import TengPicture from "../../assets/rasm1.png";
-import Checkout from "../Checkout";
+import Checkout from '../ButtonCheckout/index'
 
 const SimpleDialogDemo = () => {
   const [open, setOpen] = React.useState(false);

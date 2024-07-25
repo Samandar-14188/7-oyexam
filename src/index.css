@@ -6,7 +6,10 @@
 .Checkout-button {
   width: 100%;
 }
-
+.Checkout-wrapper {
+  padding: 50px;
+  background: #f1f1f1;
+}
 header {
   max-width: 100%;
   height: 50px;
@@ -763,11 +766,15 @@ header li a:hover {
 }
 .Checkout {
   width: 600px;
-  height: 1126px;
-  padding: 20px;
+  height: 100%;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 200px;
+  background: #fff;
+  margin-top: 50px;
+  border-radius: 10px;
 }
 .checkout-dialog {
   width: 100%;
@@ -815,9 +822,9 @@ input::placeholder {
 .RadioInput {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   gap: 10px;
-  align-items: center;
 }
 .Checkout h1 {
   font-family: Manrope;
@@ -828,9 +835,12 @@ input::placeholder {
   text-align: left;
 }
 .Radio-container {
-  width: 50%;
   padding-right: 20px;
 }
+.Radio-container input {
+  width: 100px;
+}
+
 .Checkout p {
   font-family: Manrope;
   font-size: 13px;
@@ -843,6 +853,7 @@ input::placeholder {
   text-transform: uppercase;
 }
 .RadioInput-wrapper {
+  width: 309px;
   height: 56px;
   border: 1px solid #cfcfcf;
   border-radius: 15px;

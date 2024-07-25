@@ -3,7 +3,7 @@ import Home from './page/home/index'
 import Speakers from './page/speakers'
 import Earphones from './page/earphones';
 import Headphones from './page/headphones';
-import Product from './page/product'; // The component for displaying a single product
+import Product from './page/product';
 import Layout from './layout';
 import Registr from './page/registarsiya';
 
@@ -17,7 +17,7 @@ function App() {
           <Route path="earphones" element={<Earphones />} />
           <Route path="headphones" element={<Headphones />} />
           <Route path="registrasiyashop" element={<Registr />} />
-          <Route path="product/:id" element={<Product />} /> {/* Route for individual product */}
+          <Route path="product/:id" element={<Product />} /> 
         </Route>
       </Routes>
     </Router>

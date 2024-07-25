@@ -973,3 +973,26 @@ input::placeholder {
 }
 .main-Modal {
 margin-right: 10px;}
+.menu-icon {
+  color: #fff;
+  font-size: 24px;
+}
+.Dropdown-wrapper {
+  display: none;
+}
+
+.Menuicons a {
+  color: #4BA6AC; 
+  text-decoration: none;
+}
+@media screen and (max-width: 780px) {
+ header ul {
+  display: none;
+ }
+ header .Dropdown-wrapper{
+ display: block;
+ }
+ header {
+  min-width:  780px;
+ }
+}

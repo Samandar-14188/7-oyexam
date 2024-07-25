@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom'; // Correctly import Link here
+import { useParams, Link } from 'react-router-dom'; 
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/cartSlice';
 import ProductsCards from './components/productsCards';
@@ -17,7 +17,7 @@ import ProductsMain from './components/productsmain';
 const Product = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
-  const dispatch = useDispatch(); // Initialize dispatch
+  const dispatch = useDispatch(); 
 
   useEffect(() => {
     fetch(`http://localhost:3000/${id}`)
@@ -36,7 +36,7 @@ const Product = () => {
 
   return (
     <div className="mainProducts-container">
-      <Link to="/" className="Back"> {/* Use 'to' instead of 'href' */}
+      <Link to="/" className="Back"> 
         Go Back
       </Link>
       <ProductsMain
@@ -44,7 +44,7 @@ const Product = () => {
         title={product.name}
         paragraf={product.description}
         price={product.price}
-        onClick={handleAddToCart} // Pass the click handler
+        onClick={handleAddToCart} 
       />
       <ProductInfo
         paragraf1={product.features}

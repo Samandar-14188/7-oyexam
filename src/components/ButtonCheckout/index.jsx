@@ -1,11 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
+import { useNavigate } from 'react-router-dom'; 
 
 export default function Checkout() {
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate();
 
   const handleCheckout = () => {
-    navigate('/registrasiyashop'); // Navigate to the specified URL
+    navigate('/registrasiyashop'); 
   };
 
   return (

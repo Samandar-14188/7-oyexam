@@ -1,7 +1,6 @@
 import React from "react";
-import ButtonCounter from '../../../../components/ButtonCounter';
-import ButtonToCart from '../../../../components/ButtonToCart/index'
-
+import ButtonCounter from "../../../../components/ButtonCounter";
+import ButtonToCart from "../../../../components/ButtonToCart/index";
 
 const InformationProduct = ({
   title,
@@ -9,7 +8,7 @@ const InformationProduct = ({
   text,
   price,
   productId,
-  onClick
+  onClick,
 }) => {
   return (
     <div className="InformationCard-container">
@@ -19,7 +18,7 @@ const InformationProduct = ({
       <h2>${price}</h2>
       <div className="btn-wrapper">
         <ButtonCounter productId={productId} price={price} />
-        <ButtonToCart text="ADD TO CART" onClick={onClick}  />
+        <ButtonToCart text="ADD TO CART" onClick={onClick} />
       </div>
     </div>
   );

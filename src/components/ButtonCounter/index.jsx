@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { FiMinus, FiPlus } from "react-icons/fi";
-import { incrementQuantity, decrementQuantity } from "../../redux/productSlice"; // Import actions
-import { selectCartItems } from "../../redux/cartSlice"; // Import selectors
+import { incrementQuantity, decrementQuantity } from "../../redux/productSlice";
+import { selectCartItems } from "../../redux/cartSlice"; 
 
 const ButtonCounter = ({ productId, price }) => {
   const dispatch = useDispatch();
-  const cartItems = useSelector(selectCartItems); // Get cart items from Redux store
+  const cartItems = useSelector(selectCartItems);
   const [quantity, setQuantity] = useState(0);
 
   useEffect(() => {
@@ -14,23 +14,22 @@ const ButtonCounter = ({ productId, price }) => {
     if (item) {
       setQuantity(item.quantity);
     } else {
-      setQuantity(0); // If product is not in cart, set quantity to 0
+      setQuantity(0); 
     }
   }, [cartItems, productId]);
 
   const handleIncrease = () => {
-    dispatch(incrementQuantity(productId)); // Increase quantity in product slice
+    dispatch(incrementQuantity(productId)); 
     setQuantity(prevQuantity => prevQuantity + 1);
   };
 
   const handleDecrease = () => {
-    if (quantity > 0) { // Prevent quantity from going below 0
-      dispatch(decrementQuantity(productId)); // Decrease quantity in product slice
+    if (quantity > 0) 
+      dispatch(decrementQuantity(productId)); 
       setQuantity(prevQuantity => prevQuantity - 1);
     }
   };
 
-  // Calculate total price
 
   return (
     <div className="btnCoun">

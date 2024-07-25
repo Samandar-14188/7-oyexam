@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import RadioInput from '../../components/RadioInput';
 import Input from '../../components/Input';
 import Dialog from '@mui/material/Dialog';
-import ButtonModal from '../ButtonModal'; // Adjust the path as necessary
-import Rasm from '../../assets/rasm2.png'; // Adjust the path as necessary
+import ButtonModal from '../ButtonModal'; 
+import Rasm from '../../assets/rasm2.png'; 
 
 const Checkout = () => {
   const [open, setOpen] = useState(false);
@@ -25,7 +25,7 @@ const Checkout = () => {
 
   const handleClose = (value = '') => {
     setOpen(false);
-    setIsCheckboxChecked(false); // Reset checkbox state if needed
+    setIsCheckboxChecked(false); 
   };
 
   const validateForm = () => {
@@ -83,7 +83,7 @@ const Checkout = () => {
       if (validateForm()) {
         handleClickOpen();
       } else {
-        setIsCheckboxChecked(false); // Uncheck if validation fails
+        setIsCheckboxChecked(false); 
       }
     }
   };

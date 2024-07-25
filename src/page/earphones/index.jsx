@@ -1,8 +1,8 @@
 import fiveProduct from '../../assets/fivebaground.png';
 import React, { useState, useEffect } from 'react';
 import ProductCart from "../../utils/productCart/index";
-import InfoCard from '../../utils/Product/info'; // To'g'ri komponent importi
-import PictureCard from '../../utils/Product/image'; // To'g'ri komponent importi
+import InfoCard from '../../utils/Product/info'; 
+import PictureCard from '../../utils/Product/image';
 
 const Earphones = () => {
   const [data, setData] = useState([]);
@@ -10,7 +10,6 @@ const Earphones = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // APIga so'rov yuborish
     fetch('http://localhost:3000/0')
       .then((response) => {
         if (!response.ok) {
@@ -19,15 +18,14 @@ const Earphones = () => {
         return response.json();
       })
       .then((data) => {
-        // Ma'lumotni array qilib olish
         setData(Array.isArray(data) ? data : [data]);
-        setLoading(false); // Yuklash jarayonini to'xtatish
+        setLoading(false); 
       })
       .catch((error) => {
-        setError(error); // Xatoni saqlash
-        setLoading(false); // Yuklash jarayonini to'xtatish
+        setError(error);
+        setLoading(false); 
       });
-  }, []); // Bo'sh array, shuning uchun faqat bir marta render qilinganda ishlaydi
+  }, []); 
 
   if (loading) {
     return <div>Loading...</div>;
@@ -37,8 +35,7 @@ const Earphones = () => {
     return <div>Error: {error.message}</div>;
   }
 
-  const product = data[0] || {}; // `product1` o'rniga `product` ishlatiladi
-
+  const product = data[0] || {};
   return (
     <div>
       <div className='hero-title'>EARPHONES</div>

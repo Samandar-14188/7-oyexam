@@ -1,4 +1,3 @@
-// src/components/SimpleDialogDemo.js
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MdOutlineShoppingCart } from "react-icons/md";
@@ -25,7 +24,6 @@ const SimpleDialogDemo = () => {
     dispatch(removeAll());
   };
 
-  // Calculate total price
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.quantity,
     0

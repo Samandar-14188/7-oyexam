@@ -2,10 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   items: [
-    // Example initial state, this would typically come from an API
     { id: 1, quantity: 0 },
     { id: 2, quantity: 0 },
-    // Add more products as needed
   ],
 };
 

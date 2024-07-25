@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import ProductCart from '../../utils/productCart/index';
-import PictureCart from '../../utils/Product/image';
-import InfoCart from '../../utils/Product/info';
-import TwoImage from '../../assets/twobaground.png';
-import ProductImage from '../../assets/rasm3.png';
+import React, { useState, useEffect } from "react";
+import ProductCart from "../../utils/productCart/index";
+import PictureCart from "../../utils/Product/image";
+import InfoCart from "../../utils/Product/info";
+import TwoImage from "../../assets/twobaground.png";
+import ProductImage from "../../assets/rasm3.png";
 
 const Speakers = () => {
   const [data, setData] = useState([]);
@@ -12,30 +12,28 @@ const Speakers = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // APIga so'rov yuborish
-    fetch('http://localhost:3000/5')
+    fetch("http://localhost:3000/5")
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
       .then((data) => {
-        // Ma'lumotni array qilib olish
         setData(Array.isArray(data) ? data : [data]);
-        setLoading(false); // Yuklash jarayonini to'xtatish
+        setLoading(false);
       })
       .catch((error) => {
-        setError(error); // Xatoni saqlash
-        setLoading(false); // Yuklash jarayonini to'xtatish
+        setError(error);
+        setLoading(false);
       });
   }, []);
 
   useEffect(() => {
-    fetch('http://localhost:3000/4')
+    fetch("http://localhost:3000/4")
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
@@ -62,13 +60,22 @@ const Speakers = () => {
 
   return (
     <div>
-      <div className='hero-title'>SPEAKERS</div>
-      <div className='speakers-wrapper'>
+      <div className="hero-title">SPEAKERS</div>
+      <div className="speakers-wrapper">
         <PictureCart img={TwoImage} />
-        <InfoCart text='NEW PRODUCT' title={product.name} paragraf={product.description}  productId={product.id} />
+        <InfoCart
+          text="NEW PRODUCT"
+          title={product.name}
+          paragraf={product.description}
+          productId={product.id}
+        />
       </div>
-      <div className='speakers-wrapper'>
-        <InfoCart title={product1.name} paragraf={product1.description}  productId={product1.id} />
+      <div className="speakers-wrapper">
+        <InfoCart
+          title={product1.name}
+          paragraf={product1.description}
+          productId={product1.id}
+        />
         <PictureCart img={ProductImage} />
       </div>
       <ProductCart />

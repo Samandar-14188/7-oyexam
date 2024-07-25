@@ -1,19 +1,15 @@
-// import { useRouter } from "next/navigation";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
+export default function Button({ text, productId }) {
+  const navigate = useNavigate();
 
+  const handleButtonClick = () => {
+    navigate(`/product/${productId}`);
+    console.log(' salom', productId);
+  };
 
-// export default function Button({ text, id }) {
-//   // const router = useRouter();
-
-//   // function handleClick() {
-//   //   const targetId = id !== undefined ? id - 1 : -1;
-//   //   router.push(`/earphones/${targetId}`);
-//   // }
-
-//   return <button >{text}</button>;
-
-export default function Button({text}) {
   return (
-    <button>{text}</button>
-  )
+    <button onClick={handleButtonClick}>{text}</button>
+  );
 }

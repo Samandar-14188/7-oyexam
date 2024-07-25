@@ -13,7 +13,6 @@ const CartShop = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      // APIga so'rov yuborish
       fetch("http://localhost:3000/3")
         .then((response) => {
           if (!response.ok) {
@@ -22,21 +21,22 @@ const CartShop = () => {
           return response.json();
         })
         .then((data) => {
-          // Ma'lumotni array qilib olish
           setData(Array.isArray(data) ? data : [data]);
-          setLoading(false); // Yuklash jarayonini to'xtatish
+          setLoading(false);
         })
         .catch((error) => {
-          setError(error); // Xatoni saqlash
-          setLoading(false); // Yuklash jarayonini to'xtatish
+          setError(error);
+          setLoading(false);
         });
-    }, 600); // 2 soniya kutish
-  }, []); // Bo'sh array, shuning uchun faqat bir marta render qilinganda ishlaydi
+    }, 600);
+  }, []);
 
   if (loading) {
-    return <div className="loader-container">
-      <CircularIndeterminate />
-    </div>;
+    return (
+      <div className="loader-container">
+        <CircularIndeterminate />
+      </div>
+    );
   }
 
   if (error) {
@@ -48,16 +48,16 @@ const CartShop = () => {
       <div className="hero">
         <div className="heroInfo">
           <span>NEW PRODUCT </span>
-
           {data.map((item) => (
-            <h1 key={item.id}>{item.name.toUpperCase()}</h1>
+            <React.Fragment key={item.id}>
+              <h1>{item.name.toUpperCase()}</h1>
+              <Button text="See Product" productId={item.id} />
+            </React.Fragment>
           ))}
-
           <p>
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <Button text="See Product" />
         </div>
         <div className="Home-picture">
           <img src={Onebaground} alt="rasm" />
@@ -70,38 +70,39 @@ const CartShop = () => {
         </div>
         <div className="ZX9SPEAKERInfo">
           {data.map((item) => (
-            <h1 key={item.id}>{item.name.toUpperCase()}</h1>
+            <React.Fragment key={item.id}>
+              <h1>{item.name.toUpperCase()}</h1>
+              <Button text="See Product" productId={item.id} />
+            </React.Fragment>
           ))}
-
           <p>
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </p>
-          <Button text="See Product" />
         </div>
       </div>
       <div className="YX1EARPHONES-container">
         <div className="ZX9SPEAKERTwoInfo">
           {data.map((item) => (
-            <h1 key={item.id}>{item.name.toUpperCase()}</h1>
+            <React.Fragment key={item.id}>
+              <h1>{item.name.toUpperCase()}</h1>
+              <Button text="See Product" productId={item.id} />
+            </React.Fragment>
           ))}
-
-          <Button text="See Product" />
         </div>
-      
       </div>
       <div className="YX1EARPHONES-container1">
-      <div className="YX1EARPHONESImage">
-        <img src={Threebaground} alt="rasm" />
-      </div>
+        <div className="YX1EARPHONESImage">
+          <img src={Threebaground} alt="rasm" />
+        </div>
         <div className="ZX9SPEAKERTwoInfo1 ZX9SPEAKERTwoInfo">
           {data.map((item) => (
-            <h1 key={item.id}>{item.name.toUpperCase()}</h1>
+            <React.Fragment key={item.id}>
+              <h1>{item.name.toUpperCase()}</h1>
+              <Button text="See Product" productId={item.id} />
+            </React.Fragment>
           ))}
-
-          <Button text="See Product" />
         </div>
-      
       </div>
     </div>
   );

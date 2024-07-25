@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import SimpleDialogDemo from "../components/Dialog";
 export default function Header() {
   return (
     <header>
@@ -15,7 +16,7 @@ export default function Header() {
       
         </li>
       </ul>
-      salom
+      <SimpleDialogDemo />
     </header>
   );
 }

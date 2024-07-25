@@ -65,10 +65,10 @@ const Speakers = () => {
       <div className='hero-title'>SPEAKERS</div>
       <div className='speakers-wrapper'>
         <PictureCart img={TwoImage} />
-        <InfoCart text='NEW PRODUCT' title={product.name} paragraf={product.description} />
+        <InfoCart text='NEW PRODUCT' title={product.name} paragraf={product.description}  productId={product.id} />
       </div>
       <div className='speakers-wrapper'>
-        <InfoCart title={product1.name} paragraf={product1.description} />
+        <InfoCart title={product1.name} paragraf={product1.description}  productId={product1.id} />
         <PictureCart img={ProductImage} />
       </div>
       <ProductCart />

@@ -44,7 +44,7 @@ const Earphones = () => {
       <div className='hero-title'>EARPHONES</div>
       <div className='speakers-wrapper earphones-wrapper'>
       <PictureCard img={fiveProduct} />
-        <InfoCard title={product.name} paragraf={product.description} />
+        <InfoCard title={product.name} paragraf={product.description}  productId={product.id}/>
      
       </div>
       <ProductCart />
